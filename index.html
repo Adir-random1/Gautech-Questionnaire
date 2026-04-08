@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GauTech - Strategic Questionnaire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-decor"></div>
+    <div class="container">
+        
+        <header class="header">
+            <h1 class="brand-title">Gautech Questionnaire <span class="accent-dot">.</span></h1>
+            <h2 class="sub-title">Ecosystem & Commercial Strategy</h2>
+            <p class="intro-text">Please complete all 14 sections to help us map our strategy precisely. All fields are optional but highly encouraged.</p>
+        </header>
+
+        <form id="questionnaire-form" class="form-container">
+            
+            <!-- SECTION 1 -->
+            <div class="form-card fade-in">
+                <div class="card-header">
+                    <span class="step-num">01</span><h3>Core Positioning (CRITICAL)</h3>
+                </div>
+                <div class="form-group">
+                    <label>1.1 In one line, how would you define GauTech today?</label>
+                    <div class="fill-in-blank">"GauTech is a <input type="text" name="1.1_val1" placeholder="..." class="inline-input"> platform that connects <input type="text" name="1.1_val2" placeholder="..." class="inline-input"> with <input type="text" name="1.1_val3" placeholder="..." class="inline-input"> to create <input type="text" name="1.1_val4" placeholder="..." class="inline-input">."</div>
+                </div>
+                <div class="form-group"><label>1.2 What do you want people to immediately understand when they hear GauTech?</label><textarea name="1.2_understanding" rows="2" placeholder="Your answer..."></textarea></div>
+                <div class="form-group">
+                    <label>1.3 Do you want to position this primarily as:</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="1.3_position" value="Commercial brand"> A commercial brand</label>
+                        <label><input type="checkbox" name="1.3_position" value="Social impact ecosystem"> A social impact ecosystem</label>
+                        <label><input type="checkbox" name="1.3_position" value="Sustainability movement"> A sustainability movement</label>
+                        <label><input type="checkbox" name="1.3_position" value="Combination"> A combination of all</label>
+                    </div>
+                </div>
+                <div class="form-group"><label>1.4 If a combination, what is the priority order?</label><input type="text" name="1.4_priority" placeholder="E.g. Impact > Commercial > Sustainability"></div>
+            </div>
+
+            <!-- SECTION 2 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">02</span><h3>Vision & Ecosystem Clarity</h3></div>
+                <div class="form-group"><label>2.1 What is your long-term vision for this ecosystem (5–10 years)?</label><textarea name="2.1_vision" rows="2" placeholder="Your long-term vision..."></textarea></div>
+                <div class="form-group"><label>2.2 What change do you want to create in rural India?</label><textarea name="2.2_change" rows="2" placeholder="Describe the change..."></textarea></div>
+                <div class="form-group">
+                    <label>2.3 Which of these are part of your ecosystem?</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="2.3_eco" value="Gaupalaks"> Gaupalaks</label>
+                        <label><input type="checkbox" name="2.3_eco" value="Gaushalas"> Gaushalas</label>
+                        <label><input type="checkbox" name="2.3_eco" value="Farmers"> Farmers (khet integration)</label>
+                        <label><input type="checkbox" name="2.3_eco" value="Manufacturers"> Product manufacturers</label>
+                        <label><input type="checkbox" name="2.3_eco" value="Retailers"> Retailers</label>
+                        <label><input type="checkbox" name="2.3_eco" value="Consumers"> Consumers</label>
+                    </div>
+                </div>
+                <div class="form-group"><label>2.4 Can you describe how all these stakeholders connect in your model step-by-step?</label><textarea name="2.4_connection" rows="3" placeholder="Step 1: ..., Step 2: ..."></textarea></div>
+            </div>
+
+            <!-- SECTION 3 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">03</span><h3>Rural Integration Model</h3></div>
+                <div class="form-group"><label>3.1 How will gaupalaks and rural farmers be onboarded?</label><textarea name="3.1_onboarding" rows="2"></textarea></div>
+                <div class="form-group">
+                    <label>3.2 What support will you provide them?</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="3.2_support" value="Training"> Training</label>
+                        <label><input type="checkbox" name="3.2_support" value="Infrastructure"> Infrastructure</label>
+                        <label><input type="checkbox" name="3.2_support" value="Guaranteed Procurement"> Guaranteed procurement</label>
+                        <label><input type="checkbox" name="3.2_support" value="Pricing support"> Pricing support</label>
+                    </div>
+                    <input type="text" name="3.2_support_extra" placeholder="Any additional details..." style="margin-top: 10px;">
+                </div>
+                <div class="form-group"><label>3.3 How will you ensure fair pricing, no exploitation, and long-term trust?</label><textarea name="3.3_fairness" rows="2"></textarea></div>
+                <div class="form-group">
+                    <label>3.4 Will you work with:</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="3.4_working_with" value="Individual farmers"> Individual farmers</label>
+                        <label><input type="checkbox" name="3.4_working_with" value="Clusters"> Clusters</label>
+                        <label><input type="checkbox" name="3.4_working_with" value="Existing gaushalas"> Existing gaushalas</label>
+                    </div>
+                </div>
+                <div class="form-group"><label>3.5 Are there any partnerships already in place?</label><textarea name="3.5_partnerships" rows="2"></textarea></div>
+            </div>
+
+            <!-- SECTION 4 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">04</span><h3>Product & Value Chain Scope</h3></div>
+                <div class="form-group">
+                    <label>4.1 What all categories will you cover?</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="4.1_cat" value="Cow dung"> Cow dung products (diyas, logs)</label>
+                        <label><input type="checkbox" name="4.1_cat" value="Cow urine"> Cow urine-based products</label>
+                        <label><input type="checkbox" name="4.1_cat" value="Organic fertilizers"> Organic fertilizers</label>
+                        <label><input type="checkbox" name="4.1_cat" value="Farming inputs"> Farming inputs</label>
+                        <label><input type="checkbox" name="4.1_cat" value="Eco-home"> Eco-home products</label>
+                        <label><input type="checkbox" name="4.1_cat" value="Wellness"> Wellness / Ayurvedic</label>
+                    </div>
+                    <input type="text" name="4.1_cat_other" placeholder="Others..." style="margin-top: 10px;">
+                </div>
+                <div class="form-group">
+                    <label>4.2 Will you:</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="4.2_approach" value="Manufacture"> Manufacture</label>
+                        <label><input type="checkbox" name="4.2_approach" value="Aggregate"> Aggregate</label>
+                        <label><input type="checkbox" name="4.2_approach" value="White-label"> White-label</label>
+                        <label><input type="checkbox" name="4.2_approach" value="All"> All of the above</label>
+                    </div>
+                </div>
+                <div class="form-group"><label>4.3 What role does "khet" (farmland ecosystem) play in your model?</label><textarea name="4.3_khet" rows="2"></textarea></div>
+            </div>
+
+            <!-- SECTION 5 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">05</span><h3>Supply Chain & Quality Control</h3></div>
+                <div class="form-group"><label>5.1 How will products be collected and processed?</label><textarea name="5.1_collection" rows="2"></textarea></div>
+                <div class="form-group"><label>5.2 Will there be centralized processing units?</label><textarea name="5.2_units" rows="2"></textarea></div>
+                <div class="form-group"><label>5.3 How will you ensure standardization, quality checks, and hygiene?</label><textarea name="5.3_standardization" rows="2"></textarea></div>
+                <div class="form-group"><label>5.4 Are any certifications planned?</label><textarea name="5.4_certifications" rows="2"></textarea></div>
+            </div>
+
+            <!-- SECTION 6 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">06</span><h3>Commercial Business Model</h3></div>
+                <div class="form-group">
+                    <label>6.1 What are your primary revenue streams?</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="6.1_revenue" value="Product sales (D2C)"> Product sales (D2C)</label>
+                        <label><input type="checkbox" name="6.1_revenue" value="B2B supply"> B2B supply (temples, stores)</label>
+                        <label><input type="checkbox" name="6.1_revenue" value="Subscription kits"> Subscription kits</label>
+                        <label><input type="checkbox" name="6.1_revenue" value="Franchise"> Franchise / distribution</label>
+                        <label><input type="checkbox" name="6.1_revenue" value="Expo"> Expo / events</label>
+                    </div>
+                    <input type="text" name="6.1_rev_other" placeholder="Others..." style="margin-top: 10px;">
+                </div>
+                <div class="form-group"><label>6.2 Expected margin range?</label><input type="text" name="6.2_margins" placeholder="e.g. 20-30%"></div>
+                <div class="form-group">
+                    <label>6.3 Will you:</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="radio" name="6.3_model" value="Own Inventory"> Own inventory</label>
+                        <label><input type="radio" name="6.3_model" value="Marketplace"> Operate as a marketplace</label>
+                        <label><input type="radio" name="6.3_model" value="Hybrid"> Hybrid</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 7 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">07</span><h3>Go-To-Market Strategy</h3></div>
+                <div class="form-group">
+                    <label>7.1 Who is your primary customer?</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="7.1_customer" value="Urban households"> Urban households</label>
+                        <label><input type="checkbox" name="7.1_customer" value="Spiritual consumers"> Spiritual consumers</label>
+                        <label><input type="checkbox" name="7.1_customer" value="Eco-conscious buyers"> Eco-conscious buyers</label>
+                        <label><input type="checkbox" name="7.1_customer" value="Farmers"> Farmers</label>
+                    </div>
+                </div>
+                <div class="form-group"><label>7.2 How will you build trust with consumers?</label><textarea name="7.2_trust" rows="2"></textarea></div>
+                <div class="form-group">
+                    <label>7.3 Planned distribution channels:</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="7.3_channels" value="Website"> Website</label>
+                        <label><input type="checkbox" name="7.3_channels" value="Marketplaces"> Marketplaces</label>
+                        <label><input type="checkbox" name="7.3_channels" value="Offline Retail"> Offline retail</label>
+                        <label><input type="checkbox" name="7.3_channels" value="Temple Networks"> Temple networks</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>7.4 Marketing focus:</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="7.4_marketing" value="Spiritual"> Spiritual</label>
+                        <label><input type="checkbox" name="7.4_marketing" value="Sustainability"> Sustainability</label>
+                        <label><input type="checkbox" name="7.4_marketing" value="Health/Wellness"> Health / wellness</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 8 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">08</span><h3>Brand Philosophy (Important)</h3></div>
+                <div class="form-group">
+                    <label>8.1 What does your brand stand for?</label>
+                    <div class="fill-in-blank">"Our brand exists to <input type="text" name="8.1_brand_purpose" placeholder="..." class="inline-input" style="width:70%;">."</div>
+                </div>
+                <div class="form-group"><label>8.2 How do you want customers to feel when they buy your products?</label><textarea name="8.2_feel" rows="2"></textarea></div>
+                <div class="form-group">
+                    <label>8.3 Which is more important:</label>
+                    <div class="checkbox-group">
+                        <label><input type="radio" name="8.3_importance" value="Premium Brand"> Premium brand</label>
+                        <label><input type="radio" name="8.3_importance" value="Mass Adoption"> Mass adoption</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>8.4 Keywords that define your brand (Choose up to 5):</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="8.4_keywords" value="Pure"> Pure</label>
+                        <label><input type="checkbox" name="8.4_keywords" value="Ethical"> Ethical</label>
+                        <label><input type="checkbox" name="8.4_keywords" value="Traditional"> Traditional</label>
+                        <label><input type="checkbox" name="8.4_keywords" value="Scientific"> Scientific</label>
+                        <label><input type="checkbox" name="8.4_keywords" value="Sustainable"> Sustainable</label>
+                        <label><input type="checkbox" name="8.4_keywords" value="Spiritual"> Spiritual</label>
+                        <label><input type="checkbox" name="8.4_keywords" value="Modern"> Modern</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 9 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">09</span><h3>Ethical Framework</h3></div>
+                <div class="form-group"><label>9.1 How will you ensure farmers are NOT exploited?</label><textarea name="9.1_exploitation" rows="2"></textarea></div>
+                <div class="form-group">
+                    <label>9.2 Will there be:</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="9.2_commitments" value="Fixed Pricing"> Fixed pricing model</label>
+                        <label><input type="checkbox" name="9.2_commitments" value="Profit-sharing"> Profit-sharing</label>
+                        <label><input type="checkbox" name="9.2_commitments" value="Transparent Sourcing"> Transparent sourcing</label>
+                    </div>
+                </div>
+                <div class="form-group"><label>9.3 Do you plan to communicate this to customers?</label><textarea name="9.3_communicate" rows="2"></textarea></div>
+            </div>
+
+            <!-- SECTION 10 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">10</span><h3>Scale Vision (Pan-India)</h3></div>
+                <div class="form-group"><label>10.1 What does "Pan-India ecosystem" look like in execution?</label><textarea name="10.1_pan_india" rows="2"></textarea></div>
+                <div class="form-group">
+                    <label>10.2 Phase-wise expansion plan:</label>
+                    <input type="text" name="10.2_phase1" placeholder="Phase 1..." style="margin-bottom: 10px;">
+                    <input type="text" name="10.2_phase2" placeholder="Phase 2..." style="margin-bottom: 10px;">
+                    <input type="text" name="10.2_phase3" placeholder="Phase 3...">
+                </div>
+                <div class="form-group">
+                    <label>10.3 Target Numbers:</label>
+                    <input type="text" name="10.3_num_farmers" placeholder="Farmers / gaupalaks" style="margin-bottom: 10px;">
+                    <input type="text" name="10.3_num_cities" placeholder="Cities" style="margin-bottom: 10px;">
+                    <input type="text" name="10.3_num_dist" placeholder="Distribution points">
+                </div>
+            </div>
+
+            <!-- SECTION 11 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">11</span><h3>Traction / Current Stage</h3></div>
+                <div class="form-group">
+                    <label>11.1 What is already in place today?</label>
+                    <input type="text" name="11.1_network" placeholder="Network..." style="margin-bottom: 10px;">
+                    <input type="text" name="11.1_products" placeholder="Products..." style="margin-bottom: 10px;">
+                    <input type="text" name="11.1_partnerships" placeholder="Partnerships..." style="margin-bottom: 10px;">
+                    <input type="text" name="11.1_revenue" placeholder="Revenue (if any)...">
+                </div>
+                <div class="form-group"><label>11.2 What is still in planning stage?</label><textarea name="11.2_planning" rows="2"></textarea></div>
+            </div>
+
+            <!-- SECTION 12 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">12</span><h3>Funding & Growth</h3></div>
+                <div class="form-group"><label>12.1 Are you planning to raise funds?</label><input type="text" name="12.1_raise" placeholder="Yes/No, Timeline..."></div>
+                <div class="form-group"><label>12.2 Amount required:</label><input type="text" name="12.2_amount" placeholder="$ or ₹"></div>
+                <div class="form-group">
+                    <label>12.3 Use of Funds (Estimation %):</label>
+                    <div style="display:flex; gap:10px;">
+                        <input type="text" name="12.3_supply" placeholder="Supply Chain %" style="flex:1;">
+                        <input type="text" name="12.3_branding" placeholder="Branding %" style="flex:1;">
+                    </div>
+                    <div style="display:flex; gap:10px; margin-top:10px;">
+                        <input type="text" name="12.3_tech" placeholder="Tech %" style="flex:1;">
+                        <input type="text" name="12.3_marketing" placeholder="Marketing %" style="flex:1;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 13 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">13</span><h3>Brand & Design Direction</h3></div>
+                <div class="form-group">
+                    <label>13.1 Preferred tone:</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="13.1_tone" value="Premium"> Premium</label>
+                        <label><input type="checkbox" name="13.1_tone" value="Spiritual"> Spiritual</label>
+                        <label><input type="checkbox" name="13.1_tone" value="Modern"> Modern</label>
+                        <label><input type="checkbox" name="13.1_tone" value="Government-style"> Government-style</label>
+                    </div>
+                </div>
+                <div class="form-group"><label>13.2 Reference brands (if any):</label><textarea name="13.2_references" rows="2"></textarea></div>
+                <div class="form-group">
+                    <label>13.3 Do you want the design to have a:</label>
+                    <div class="checkbox-group">
+                        <label><input type="radio" name="13.3_design" value="Minimal Modern"> Minimal modern look</label>
+                        <label><input type="radio" name="13.3_design" value="Traditional Indian"> Traditional Indian aesthetic</label>
+                        <label><input type="radio" name="13.3_design" value="Blend"> Blend of both</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 14 -->
+            <div class="form-card fade-in">
+                <div class="card-header"><span class="step-num">14</span><h3>Supporting Materials</h3></div>
+                <div class="form-group">
+                    <label>14.1 Please check if you have any:</label>
+                    <div class="checkbox-group grid-2">
+                        <label><input type="checkbox" name="14.1_docs" value="Pitch decks"> Existing pitch decks</label>
+                        <label><input type="checkbox" name="14.1_docs" value="Photos/Videos"> Photos/videos</label>
+                        <label><input type="checkbox" name="14.1_docs" value="Research"> Research or reports</label>
+                    </div>
+                </div>
+                <div class="form-group"><label>File Links / Drive Folders:</label><textarea name="14.1_links" rows="3" placeholder="Paste Google Drive links, Dropboxes, etc..."></textarea></div>
+            </div>
+
+            <!-- SUBMIT BUTTONS -->
+            <div class="form-actions fade-in">
+                <button type="button" class="btn primary-btn" id="export-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download PDF
+                </button>
+            </div>
+            
+            <p class="footer-note">All data is processed securely and directly within your browser. No data is stored externally.</p>
+
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
