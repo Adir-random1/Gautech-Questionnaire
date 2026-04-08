@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 title: '1. CORE POSITIONING',
                 content: [
-                    `1.1 Definition: "GauTech is a ${safeGet('1.1_val1')} platform that connects ${safeGet('1.1_val2')} with ${safeGet('1.1_val3')} to create ${safeGet('1.1_val4')}."`,
+                    `1.1 Definition: "GauAura is a ${safeGet('1.1_val1')} platform that connects ${safeGet('1.1_val2')} with ${safeGet('1.1_val3')} to create ${safeGet('1.1_val4')}."`,
                     `1.2 Immediate Understanding: ${safeGet('1.2_understanding')}`,
                     `1.3 Positioned Primarily As: ${safeArr('1.3_position')}`,
                     `1.4 Priority Order: ${safeGet('1.4_priority')}`
