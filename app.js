@@ -164,14 +164,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (format === 'html') {
             let htmlResult = `
-            <div style="background-color: #ffffff; color: #000000; font-family: Arial, sans-serif; padding: 40px; width: 800px;">
-                <h1 style="color: #1a4a38; text-align: center; border-bottom: 2px solid #1a4a38; padding-bottom: 10px; margin-bottom: 30px;">GAUTECH STRATEGY SUBMISSION</h1>
+            <div style="background-color: #ffffff; color: #000000; font-family: 'Helvetica', 'Arial', sans-serif; padding: 40px; width: 750px; margin: 0 auto;">
+                <h1 style="color: #1a4a38; text-align: center; border-bottom: 2px solid #1a4a38; padding-bottom: 15px; margin-bottom: 30px; font-size: 24px; letter-spacing: 1px;">GAUTECH STRATEGIC SUBMISSION</h1>
             `;
             sections.forEach(sec => {
-                htmlResult += `<div style="page-break-inside: avoid;">`;
-                htmlResult += `<h2 style="color: #2c9460; margin-top: 30px; border-bottom: 1px solid #ccc; padding-bottom: 5px; font-size: 18px;">${sec.title}</h2>`;
+                htmlResult += `<div style="page-break-inside: avoid; margin-bottom: 25px;">`;
+                htmlResult += `<h2 style="color: #2c9460; margin-top: 20px; border-bottom: 1.5px solid #eee; padding-bottom: 8px; font-size: 18px; text-transform: uppercase; letter-spacing: 0.5px;">${sec.title}</h2>`;
                 sec.content.forEach(line => {
-                    htmlResult += `<p style="margin: 8px 0; line-height: 1.5; font-size: 14px; page-break-inside: avoid;"><strong>${line.split(':')[0]}:</strong> ${line.substring(line.indexOf(':') + 1)}</p>`;
+                    const parts = line.split(':');
+                    const label = parts[0];
+                    const value = line.substring(line.indexOf(':') + 1).trim();
+                    htmlResult += `<div style="margin: 12px 0; line-height: 1.6; font-size: 14px; page-break-inside: avoid; display: block;">
+                        <span style="font-weight: bold; color: #333; min-width: 180px; display: inline-block;">${label}:</span>
+                        <span style="color: #555; display: inline;">${value || 'Not provided'}</span>
+                    </div>`;
                 });
                 htmlResult += `</div>`;
             });
